@@ -1,0 +1,55 @@
+.badge {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: var(--linegreen);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--linegreen);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
+.badge__line {
+  color: var(--linegreen);
+  position: absolute;
+  top: 40px;
+  left: 43px;
+  background-color: white;
+}
+
+.dot__position {
+  top: 13px;
+  right: 0px;
+}
+
+.badge__nav-talks {
+  position: absolute;
+  top: -15px;
+  right: -8px;
+  animation: animationBadge 2s ease-in-out infinite;
+}
+
+@keyframes animationBadge {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: translateY(-4px) rotateY(360deg);
+  }
+  100% {
+    transform: translate(0px) rotateY(0);
+  }
+}

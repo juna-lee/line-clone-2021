@@ -1,0 +1,29 @@
+.nav {
+  width: 100%;
+  border-top: var(--main-border);
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.nav-list__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-badge {
+  position: relative;
+}
+
+.nav-list__column span {
+  font-size: 13px;
+  margin-top: 6px;
+}

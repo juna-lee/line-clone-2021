@@ -1,0 +1,38 @@
+.talks-header {
+  margin: 0 20px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.talks-header h1 {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.talks-header__column {
+  display: flex;
+  align-items: center;
+}
+
+.talks-header__column:first-child i {
+  margin-left: 8px;
+}
+
+.talks-header__column:last-child i {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.badge {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: var(--linegreen);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}

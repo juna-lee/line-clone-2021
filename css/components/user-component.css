@@ -1,0 +1,124 @@
+.user-component {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.user-component__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.user-component__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 18px;
+}
+
+.user-component__contents h4 {
+  font-weight: bold;
+}
+
+.user-component__contents h5 {
+  font-size: 12px;
+  margin-top: 8px;
+  opacity: 0.5;
+}
+
+.round-border {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 13px;
+  margin-left: 3px;
+  border-radius: 13px;
+  font-size: 10px;
+}
+
+.user-component__image {
+  position: relative;
+}
+
+.user-component__image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-component__column:last-child i {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.user-component__column:last-child i:first-child {
+  margin-right: 20px;
+}
+
+.user-component__column:last-child i:last-child {
+  margin-right: 3px;
+}
+
+.user-component__sm {
+  background-color: var(--linegreen);
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.user-component__sm i {
+  color: white;
+  position: absolute;
+  left: 13px;
+  top: 17px;
+}
+
+.user-component__sm img {
+  width: 50px;
+  height: 50px;
+}
+
+.user-component__column-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+.user-component__column-icon span {
+  margin-right: 5px;
+}
+
+.user-component__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.user-component__column h6 {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.user_component__red {
+  color: tomato;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.user-component__column .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
+}
+
+.user-component__column .setting-component {
+  padding: 10px;
+}

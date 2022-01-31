@@ -1,0 +1,64 @@
+@keyframes seeScreen {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-screen__friends {
+  animation: seeScreen 1.2s ease-in-out forwards;
+}
+.main-screen {
+  padding: 0px 20px;
+}
+
+.friends-section {
+  padding-bottom: 70px;
+}
+
+.friends-group {
+  margin: 30px 3px;
+}
+
+.friends-group__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.friends-group__title-text span {
+  margin-left: 7px;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--linegreen);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+#splash-screen i {
+  font-size: 180px;
+  color: white;
+}
